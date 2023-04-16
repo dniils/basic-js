@@ -15,7 +15,7 @@ const { NotImplementedError } = require("../extensions/index.js");
  *
  */
 function countCats(matrix) {
-  let result = matrix
+  const result = matrix
     .map((arr) => arr.filter((el) => el === "^^").length)
     .reduce((a, c) => a + c, 0);
 
